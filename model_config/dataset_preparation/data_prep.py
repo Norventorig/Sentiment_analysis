@@ -14,10 +14,11 @@ stop_words = set(stopwords.words('english'))
 
 def create_dataset():
     def clean_text(text):
-        text = text.lower()
-        text = re.sub(r'<.*?>', '', text)
-        text = re.sub(r'[^a-z\s]', '', text)
-        text = ' '.join([w for w in text.split() if w not in stop_words])
+        if not pd.isna(text):
+            text = text.lower()
+            text = re.sub(r'<.*?>', '', text)
+            text = re.sub(r'[^a-z\s]', '', text)
+            text = ' '.join([w for w in text.split() if w not in stop_words])
         return text
 
     df_1 = pd.read_csv(dataset_path / "data.csv")
@@ -34,11 +35,11 @@ def create_dataset():
 
     df_3 = df_3[['Comment', 'Sentiment']]
     df_3.rename(columns={'Comment': 'text', 'Sentiment': 'sentiment'}, inplace=True)
-    df_3.dropna(inplace=True)
     df_3['text'] = df_3['text'].apply(clean_text)
 
     dataset = pd.concat([df_1, df_2, df_3])
-    dataset.to_csv('dataset')
+    dataset = dataset.dropna()  # Спроси Завалина почему не работает. Уточни что при inplace тож самое
+    dataset.to_csv(PROJECT_ROOT / "Sentiment_Analysis" / "model_config" / 'dataset.csv', index=False, encoding='utf-8')
 
 
 if __name__ == '__main__':
