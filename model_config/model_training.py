@@ -4,6 +4,8 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras import layers, models
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 dataset_path = PROJECT_ROOT / "Sentiment_Analysis" / "model_config" / "dataset.csv"
@@ -39,3 +41,30 @@ X_val_seq = tokenizer.texts_to_sequences(X_val)
 
 X_train_pad = pad_sequences(X_train_seq, maxlen=max_len)
 X_val_pad = pad_sequences(X_val_seq, maxlen=max_len)
+
+
+early_stop = EarlyStopping(patience=5,
+                           monitor='val_loss',
+                           restore_best_weights=True)
+model_check = ModelCheckpoint(save_best_only=True,
+                              monitor='val_loss',
+                              filepath=PROJECT_ROOT / "Sentiment_Analysis" / "model_config" / "model.keras")
+
+
+model = models.Sequential([layers.Embedding(input_dim=max_words, output_dim=128),
+                           layers.Bidirectional(layers.LSTM(64, return_sequences=False)),
+                           layers.Dropout(0.3),
+                           layers.Dense(64, activation="relu"),
+                           layers.Dropout(0.2),
+                           layers.Dense(3, activation="softmax")])
+
+model.compile(optimizer="adam",
+              loss="sparse_categorical_crossentropy",
+              metrics=["accuracy"])
+
+history = model.fit(X_train_pad, y_train,
+                    validation_data=(X_val_pad, y_val),
+                    epochs=24,
+                    batch_size=256,
+                    callbacks=[early_stop, model_check])
+
