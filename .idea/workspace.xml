@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86496d7e-d2eb-4d7f-bd51-d9ca1989d682" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/model_config/data_prep.py" beforeDir="false" afterPath="$PROJECT_DIR$/model_config/data_prep.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_config/datasets/data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_config/datasets/sentiment_analysis.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_config/datasets/sentiment_data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_config/datasets/sentimentdataset.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_config/datasets/test.csv" beforeDir="false" />
+    <list default="true" id="d4c4f5d7-37f5-452c-80c2-6af49b9c1793" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,5 +49,28 @@
       <updated>1764480844818</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
