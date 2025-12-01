@@ -6,6 +6,8 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras import layers, models
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
+import pickle
+
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 dataset_path = PROJECT_ROOT / "Sentiment_Analysis" / "model_config" / "dataset.csv"
@@ -68,3 +70,9 @@ history = model.fit(X_train_pad, y_train,
                     batch_size=256,
                     callbacks=[early_stop, model_check])
 
+
+with open('config.pkl', 'wb') as f:
+    pickle.dump({'max_len': max_len}, f)
+
+with open('tokenizer.pkl', 'wb') as f:
+    pickle.dump(tokenizer, f)
