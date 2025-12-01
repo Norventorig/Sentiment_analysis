@@ -1,4 +1,8 @@
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+import re
+from nltk.corpus import stopwords
+
+stop_words = set(stopwords.words('english'))
 
 
 class ModelHandler:
@@ -9,7 +13,12 @@ class ModelHandler:
         self.class_labels = class_labels
 
     def _prepare_data(self, x):
-        x_seq = self._tokenizer.texts_to_sequences(x)
+        x = x.lower()
+        x = re.sub(r'<.*?>', '', x)
+        x = re.sub(r'[^a-z\s]', '', x)
+        x = ' '.join([w for w in x.split() if w not in stop_words])
+
+        x_seq = self._tokenizer.texts_to_sequences([x])
         x_pad_seq = pad_sequences(x_seq, maxlen=self.pad_len)
 
         return x_pad_seq
@@ -18,17 +27,14 @@ class ModelHandler:
         try:
             if isinstance(x, str):
                 x = self._prepare_data(x=x)
-                pred = self._model.predict(x).argmax(axis=1)
+                pred = self._model.predict(x).argmax(axis=1)[0]
                 pred = self.class_labels[pred]
 
             else:
-                raise ValueError
+                raise ValueError('ТИП ВВЕДЕННЫХ ДАННЫХ ДОЛЖЕН БЫТЬ str')
 
-        except ValueError:
-            print('ТИП ВВЕДЕННЫХ ДАННЫХ ДОЛЖЕН БЫТЬ str')
-
-        except:
-            print('ВОЗНИКЛА ОШИБКА НА ЭТАПЕ ПРЕДСКАЗАНИЯ')
+        except Exception as e:
+            print('ВОЗНИКЛА ОШИБКА НА ЭТАПЕ ПРЕДСКАЗАНИЯ', e)
 
         else:
             return pred
