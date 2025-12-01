@@ -16,7 +16,7 @@ class ModelHandler:
 
     def predict(self, x):
         try:
-            x = self._prepare_data(x=x)
+            x = self._prepare_data(x=x.astype(str))
             pred = self._model.predict(x).argmax(axis=1)
             pred = self.class_labels[pred]
 
