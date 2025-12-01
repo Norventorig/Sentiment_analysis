@@ -16,9 +16,16 @@ class ModelHandler:
 
     def predict(self, x):
         try:
-            x = self._prepare_data(x=x.astype(str))
-            pred = self._model.predict(x).argmax(axis=1)
-            pred = self.class_labels[pred]
+            if isinstance(x, str):
+                x = self._prepare_data(x=x)
+                pred = self._model.predict(x).argmax(axis=1)
+                pred = self.class_labels[pred]
+
+            else:
+                raise ValueError
+
+        except ValueError:
+            print('ТИП ВВЕДЕННЫХ ДАННЫХ ДОЛЖЕН БЫТЬ str')
 
         except:
             print('ВОЗНИКЛА ОШИБКА НА ЭТАПЕ ПРЕДСКАЗАНИЯ')
