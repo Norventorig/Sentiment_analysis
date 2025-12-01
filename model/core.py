@@ -1,4 +1,4 @@
-from handler.model_handler import ModelHandler
+from model.handler.model_handler import ModelHandler
 from tensorflow.keras.models import load_model
 import pickle
 
