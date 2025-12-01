@@ -9,8 +9,12 @@ from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 import pickle
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-dataset_path = PROJECT_ROOT / "Sentiment_Analysis" / "model_config" / "dataset.csv"
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
+
+dataset_path = PROJECT_ROOT / "model" / "model_config" / "utils" / "dataset.csv"
+model_path = PROJECT_ROOT / "model" / "model_config" / "utils" / "model.keras"
+tokenizer_path = PROJECT_ROOT / "model" / "model_config" / "utils" / "tokenizer.pkl"
+config_path = PROJECT_ROOT / "model" / "model_config" / "utils" / "config.pkl"
 
 
 def get_dataset() -> pd.DataFrame:
@@ -18,7 +22,7 @@ def get_dataset() -> pd.DataFrame:
         data = pd.read_csv(dataset_path, encoding='utf-8').dropna()
 
     else:
-        from dataset_preparation.data_prep import create_dataset
+        from ..dataset_preparation.data_prep import create_dataset
 
         create_dataset()
         data = pd.read_csv(dataset_path, encoding='utf-8').dropna()
@@ -50,7 +54,7 @@ early_stop = EarlyStopping(patience=5,
                            restore_best_weights=True)
 model_check = ModelCheckpoint(save_best_only=True,
                               monitor='val_loss',
-                              filepath=PROJECT_ROOT / "Sentiment_Analysis" / "model_config" / "model.keras")
+                              filepath=model_path)
 
 
 model = models.Sequential([layers.Embedding(input_dim=max_words, output_dim=128),
@@ -71,8 +75,8 @@ history = model.fit(X_train_pad, y_train,
                     callbacks=[early_stop, model_check])
 
 
-with open('config.pkl', 'wb') as f:
+with open(config_path, 'wb') as f:
     pickle.dump({'max_len': max_len}, f)
 
-with open('tokenizer.pkl', 'wb') as f:
+with open(tokenizer_path, 'wb') as f:
     pickle.dump(tokenizer, f)
