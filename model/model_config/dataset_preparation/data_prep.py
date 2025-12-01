@@ -7,7 +7,7 @@ from nltk.corpus import stopwords
 # nltk.download('stopwords')
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
-dataset_path = PROJECT_ROOT / "Sentiment_Analysis" / "model_config" / "dataset_preparation" / "datasets"
+dataset_path = PROJECT_ROOT / "model" / "model_config" / "dataset_preparation" / "datasets"
 
 stop_words = set(stopwords.words('english'))
 
@@ -39,7 +39,7 @@ def create_dataset():
 
     dataset = pd.concat([df_1, df_2, df_3])
     dataset = dataset.dropna()  # Спроси Завалина почему не работает. Уточни что при inplace тож самое
-    dataset.to_csv(PROJECT_ROOT / "Sentiment_Analysis" / "model_config" / 'dataset.csv', index=False, encoding='utf-8')
+    dataset.to_csv(dataset_path / 'dataset.csv', index=False, encoding='utf-8')
 
 
 if __name__ == '__main__':
