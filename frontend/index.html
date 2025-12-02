@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sentiment Demo</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Проверка настроения</h1>
+
+    <textarea id="inputText" placeholder="Введи текст..." rows="6"></textarea>
+
+    <div class="controls">
+      <button id="btnPredict">Сделать прогноз</button>
+      <span id="status"></span>
+    </div>
+
+    <div class="result-box">
+      <h3>Результат</h3>
+      <div id="resultLabel" class="label">—</div>
+      <div id="resultConfidence" class="confidence">—</div>
+      <pre id="rawOutput" class="raw">—</pre>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+body { font-family: Arial, sans-serif; background:#f3f4f6; color:#111; padding:24px; }
+.container { max-width:720px; margin:20px auto; background:white; padding:20px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.06); }
+textarea { width:100%; padding:12px; font-size:16px; border:1px solid #ddd; border-radius:6px; resize:vertical; }
+.controls { display:flex; gap:12px; align-items:center; margin-top:12px; }
+button { padding:10px 16px; border-radius:6px; border:none; cursor:pointer; background:#2563eb; color:white; }
+button:active { transform:translateY(1px); }
+.result-box { margin-top:18px; padding:12px; border-radius:6px; border:1px dashed #e5e7eb; background:#fbfdff; }
+.label { font-size:20px; font-weight:700; margin-top:6px; }
+.confidence { color:#374151; margin-top:6px; }
+.raw { margin-top:10px; background:#f8fafc; padding:8px; border-radius:6px; white-space:pre-wrap; }
