@@ -27,8 +27,8 @@ class ModelHandler:
         try:
             if isinstance(x, str):
                 x = self._prepare_data(x=x)
-                prediction = self._model.predict(x).argmax(axis=1)[0]
-                prediction = self.class_labels[prediction]
+                probability = self._model.predict(x)
+                prediction = self.class_labels[probability.argmax(axis=1)[0]]
 
             else:
                 raise ValueError('ТИП ВВЕДЕННЫХ ДАННЫХ ДОЛЖЕН БЫТЬ str')
@@ -37,4 +37,4 @@ class ModelHandler:
             print('ВОЗНИКЛА ОШИБКА НА ЭТАПЕ ПРЕДСКАЗАНИЯ', e)
 
         else:
-            return prediction
+            return prediction, probability[0].max()
