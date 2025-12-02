@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4c4f5d7-37f5-452c-80c2-6af49b9c1793" name="Changes" comment="adds confidence output">
-      <change beforePath="$PROJECT_DIR$/backend/app/model_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/model_loader.py" afterDir="false" />
+    <list default="true" id="d4c4f5d7-37f5-452c-80c2-6af49b9c1793" name="Changes" comment="adds frontend utils">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -33,13 +36,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/-/PycharmProjects/english_learner&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/-/PycharmProjects/english_learner"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\-\PycharmProjects\Sentiment_Analysis\model\model_config\utils" />
@@ -238,7 +242,35 @@
       <option name="project" value="LOCAL" />
       <updated>1764676827722</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="deletes extra files">
+      <created>1764677045913</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1764677045913</updated>
+    </task>
+    <task id="LOCAL-00028" summary="initialises app.py">
+      <created>1764677069180</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1764677069180</updated>
+    </task>
+    <task id="LOCAL-00029" summary="adds pydantic, fastapi">
+      <created>1764677106025</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1764677106025</updated>
+    </task>
+    <task id="LOCAL-00030" summary="adds frontend utils">
+      <created>1764678247330</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1764678247330</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -265,9 +297,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="moves model_config into model package" />
-    <MESSAGE value="creates model_training package" />
-    <MESSAGE value="moves into model_training package" />
     <MESSAGE value="saves tokenizer" />
     <MESSAGE value="moves into utils" />
     <MESSAGE value="upgrade file path system" />
@@ -289,6 +318,21 @@
     <MESSAGE value="." />
     <MESSAGE value="adds model_loader" />
     <MESSAGE value="adds confidence output" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds confidence output" />
+    <MESSAGE value="deletes extra files" />
+    <MESSAGE value="initialises app.py" />
+    <MESSAGE value="adds pydantic, fastapi" />
+    <MESSAGE value="adds frontend utils" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds frontend utils" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/backend/app.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
