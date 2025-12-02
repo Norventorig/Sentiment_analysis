@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4c4f5d7-37f5-452c-80c2-6af49b9c1793" name="Changes" comment="completes README s" />
+    <list default="true" id="d4c4f5d7-37f5-452c-80c2-6af49b9c1793" name="Changes" comment="adds uvicorn into requirements.txt">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +22,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -273,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1764680662179</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="adds uvicorn into requirements.txt">
+      <created>1764680801892</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1764680801892</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -300,7 +310,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="moves into utils" />
     <MESSAGE value="upgrade file path system" />
     <MESSAGE value="removes dataset from utils" />
     <MESSAGE value="adds data" />
@@ -325,7 +334,8 @@
     <MESSAGE value="adds pydantic, fastapi" />
     <MESSAGE value="adds frontend utils" />
     <MESSAGE value="completes README s" />
-    <option name="LAST_COMMIT_MESSAGE" value="completes README s" />
+    <MESSAGE value="adds uvicorn into requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds uvicorn into requirements.txt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
