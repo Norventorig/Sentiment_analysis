@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4c4f5d7-37f5-452c-80c2-6af49b9c1793" name="Changes" comment="clears main for future integration">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d4c4f5d7-37f5-452c-80c2-6af49b9c1793" name="Changes" comment="adds confidence output">
+      <change beforePath="$PROJECT_DIR$/backend/app/model_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/model_loader.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +210,35 @@
       <option name="project" value="LOCAL" />
       <updated>1764582614758</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="creates backend/app package">
+      <created>1764676230087</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1764676230087</updated>
+    </task>
+    <task id="LOCAL-00024" summary=".">
+      <created>1764676235861</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1764676235861</updated>
+    </task>
+    <task id="LOCAL-00025" summary="adds model_loader">
+      <created>1764676357995</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1764676357995</updated>
+    </task>
+    <task id="LOCAL-00026" summary="adds confidence output">
+      <created>1764676827722</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1764676827722</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,6 +285,10 @@
     <MESSAGE value="adds forgotten preprocess function; fixes prediction output; improves error processing" />
     <MESSAGE value="satisfies pep" />
     <MESSAGE value="clears main for future integration" />
-    <option name="LAST_COMMIT_MESSAGE" value="clears main for future integration" />
+    <MESSAGE value="creates backend/app package" />
+    <MESSAGE value="." />
+    <MESSAGE value="adds model_loader" />
+    <MESSAGE value="adds confidence output" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds confidence output" />
   </component>
 </project>
