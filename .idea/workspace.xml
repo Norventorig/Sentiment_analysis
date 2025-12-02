@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4c4f5d7-37f5-452c-80c2-6af49b9c1793" name="Changes" comment="" />
+    <list default="true" id="d4c4f5d7-37f5-452c-80c2-6af49b9c1793" name="Changes" comment="clears main for future integration">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,9 +36,17 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/-/PycharmProjects/english_learner&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\-\PycharmProjects\Sentiment_Analysis\model\model_config\utils" />
+      <recent name="C:\Users\-\PycharmProjects\Sentiment_Analysis\model\model_config\model_training" />
+      <recent name="C:\Users\-\PycharmProjects\Sentiment_Analysis\model" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -46,6 +56,161 @@
       <option name="presentableId" value="Default" />
       <updated>1764480844818</updated>
     </task>
+    <task id="LOCAL-00001" summary="moves model_config into model package">
+      <created>1764571117321</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764571117321</updated>
+    </task>
+    <task id="LOCAL-00002" summary="creates model_training package">
+      <created>1764571431444</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1764571431444</updated>
+    </task>
+    <task id="LOCAL-00003" summary="moves into model_training package">
+      <created>1764571447935</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1764571447935</updated>
+    </task>
+    <task id="LOCAL-00004" summary="saves tokenizer">
+      <created>1764571982785</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1764571982785</updated>
+    </task>
+    <task id="LOCAL-00005" summary="moves into utils">
+      <created>1764572945115</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1764572945115</updated>
+    </task>
+    <task id="LOCAL-00006" summary="upgrade file path system">
+      <created>1764572970532</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1764572970532</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fixes file path system">
+      <created>1764573798931</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1764573798931</updated>
+    </task>
+    <task id="LOCAL-00008" summary="removes dataset from utils">
+      <created>1764573824978</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1764573824978</updated>
+    </task>
+    <task id="LOCAL-00009" summary="adds data">
+      <created>1764576007056</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1764576007056</updated>
+    </task>
+    <task id="LOCAL-00010" summary="adds handler">
+      <created>1764576038300</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1764576038300</updated>
+    </task>
+    <task id="LOCAL-00011" summary="completes">
+      <created>1764577486270</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1764577486270</updated>
+    </task>
+    <task id="LOCAL-00012" summary="adds handler">
+      <created>1764577565691</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1764577565691</updated>
+    </task>
+    <task id="LOCAL-00013" summary="adds model_handler">
+      <created>1764578954342</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1764578954342</updated>
+    </task>
+    <task id="LOCAL-00014" summary="adds core">
+      <created>1764579384857</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1764579384857</updated>
+    </task>
+    <task id="LOCAL-00015" summary="adds astype atr">
+      <created>1764580337426</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1764580337426</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fixes file path for modelHandler">
+      <created>1764580367819</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1764580367819</updated>
+    </task>
+    <task id="LOCAL-00017" summary="adds data type check for str">
+      <created>1764580960050</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1764580960050</updated>
+    </task>
+    <task id="LOCAL-00018" summary="adds main">
+      <created>1764580972502</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1764580972502</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fixes file path system">
+      <created>1764580986735</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1764580986735</updated>
+    </task>
+    <task id="LOCAL-00020" summary="adds forgotten preprocess function; fixes prediction output; improves error processing">
+      <created>1764582033105</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1764582033105</updated>
+    </task>
+    <task id="LOCAL-00021" summary="satisfies pep">
+      <created>1764582147932</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1764582147932</updated>
+    </task>
+    <task id="LOCAL-00022" summary="clears main for future integration">
+      <created>1764582614758</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1764582614758</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -70,5 +235,28 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="moves model_config into model package" />
+    <MESSAGE value="creates model_training package" />
+    <MESSAGE value="moves into model_training package" />
+    <MESSAGE value="saves tokenizer" />
+    <MESSAGE value="moves into utils" />
+    <MESSAGE value="upgrade file path system" />
+    <MESSAGE value="removes dataset from utils" />
+    <MESSAGE value="adds data" />
+    <MESSAGE value="completes" />
+    <MESSAGE value="adds handler" />
+    <MESSAGE value="adds model_handler" />
+    <MESSAGE value="adds core" />
+    <MESSAGE value="adds astype atr" />
+    <MESSAGE value="fixes file path for modelHandler" />
+    <MESSAGE value="adds data type check for str" />
+    <MESSAGE value="adds main" />
+    <MESSAGE value="fixes file path system" />
+    <MESSAGE value="adds forgotten preprocess function; fixes prediction output; improves error processing" />
+    <MESSAGE value="satisfies pep" />
+    <MESSAGE value="clears main for future integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="clears main for future integration" />
   </component>
 </project>
