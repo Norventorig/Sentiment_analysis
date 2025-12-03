@@ -5,7 +5,7 @@ import pickle
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-utils_path = PROJECT_ROOT / "model" / "model_config" / "utils"
+utils_path = PROJECT_ROOT / "model" / "utils"
 
 class_labels = ["negative", 'neutral', "positive"]
 model = load_model(utils_path / "model.keras")
